@@ -7,7 +7,7 @@
 
 ## Purpose
 
-To produce a R package with Rmarkdown documents and scripts. The package is based ont the work by Matt Dray. There is a [blog post](https://www.rostrum.blog/2019/06/11/r-repo-template/) for a more in-depth explanation of the original [repo].
+To produce a R package with Rmarkdown documents and scripts. The package is based ont the work by Matt Dray. There is a [blog post](https://www.rostrum.blog/2019/06/11/r-repo-template/) for a more in-depth explanation of the original [repo](https://github.com/matt-dray/r-analysis-template).
 
 ## How to use
 
