@@ -7,17 +7,11 @@
 
 ## Purpose
 
-An opinionated [GitHub repository template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) to begin a simple analytical project with R and RStudio.
-
-You should [read this blog post](https://www.rostrum.blog/2019/06/11/r-repo-template/) for a more in-depth explanation of this repo.
+To produce a R package with Rmarkdown documents and scripts. The package is based ont the work by Matt Dray. There is a [blog post](https://www.rostrum.blog/2019/06/11/r-repo-template/) for a more in-depth explanation of the original [repo].
 
 ## How to use
 
-Click the green 'Use this template' button from [in this repo](https://github.com/matt-dray/analysis-template) to copy it.
-
-<img src="https://www.rostrum.blog/post/2019-06-11-a-repo-template-for-r-analysis_files/use-this.png" alt="The 'Use this template' button found in a GitHub repository template" width="200px">
-
-[You can also click here](https://github.com/matt-dray/r-analysis-template/generate) to open the page for copying the repo.
+Click the green 'Use this template' button from [in this repo](https://github.com/Graham-Rush-19/RStudio_template) to copy it.
 
 ## File tree
 
@@ -26,6 +20,9 @@ r-analysis-template/
 ├── 01_read.R
 ├── 02_tidy.R
 ├── 03_model.R
+├── R/
+│   ├── functions.r
+│   └── script_skeleton.r
 ├── data/
 │   ├── README.md
 │   └── YYYMMDD_raw-data.csv
@@ -36,12 +33,18 @@ r-analysis-template/
 │   └── template-document-example.Rmd
 ├── ext/
 │   └── README.md
+├── markdown/
+│   └── logo.png
+│   └── styles.css
+│   └── Rmarkdwon.Rmd
 ├── output/
 │   ├── README.md
 │   └── YYYMMDD_cleaned-data.csv
 ├── R/
 │   ├── functions.R
 │   └── README.md
+├── markdown-template.Rmd
+├── markdown-template.html
 ├── r-analysis-template.Rproj
 └── README.md
 ```
