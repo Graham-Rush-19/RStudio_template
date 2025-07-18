@@ -1,0 +1,94 @@
+---
+title: "Untitled"
+author:
+  - name: Graham Rush                              # can list separate items
+    # affiliation: Leeds Beckett University      # same amountt of indentation needed
+ # - name: Name_2
+    # affiliaion: University of SomeOtherPlace
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: true
+    fig_caption: true
+    theme: flatly
+    css: markdown/styles.css
+---
+
+<img src="markdown/logo.png" width=200 style="position:absolute;top:20px;right:300px;" />
+
+## About
+
+Update this to provide instructions for the code.
+
+## Clear the environment
+
+```{r, include=FALSE}
+rm(list = ls())
+```
+
+## Customising the features
+
+The custom CSS has been used to change the style of the tables in the document.
+
+```{r}
+knitr::kable(mtcars[1:5, 1:5], caption = "A custom table style")
+```
+
+## load up the packages required
+
+Add any packages to the `packages` object. Add `include=FALSE` to remove the code from the report
+
+```{r, load_functions} 
+packages <- c('clipr', 'ARTofR')
+
+for (package in packages) {
+  if (!require(package, character.only = TRUE)) {
+    message(paste("Installing package:", package))
+    install.packages(package, dependencies = TRUE) # Install if not available
+    library(package, character.only = TRUE)        # Load after installation
+  } else {
+    message(paste("Loaded package:", package))
+  }
+}
+```
+## Sourcing external R Files
+
+The files should be saved in the `R` file. See https://bookdown.org/yihui/rmarkdown-cookbook/source-script.html for information
+
+```{r, include=FALSE, load-multiple-scripts}
+# # 1. List only the scripts you want (just the filenames, no path)
+# selected <- c("script1.R", "script2.R", "script3.R")
+# 
+# # 2. Set the folder so we get "R/script1.R", etc.
+# scripts <- file.path("R", selected)
+# 
+# # 3. Source each one into your knit environment
+# for (f in scripts) {
+#   source(f, local = knitr::knit_global())
+# }
+```
+
+## Creating a directory 
+
+If you look at the file `inst/rmarkdown/templates/02-extra-files/templates.yaml`, you will see the following line:
+
+```
+create_dir: true
+```
+
+This means that a new directory will be created when the template is selected. This will copy over the content of the folder `inst/rmarkdown/templates/02-extra-files/skeleton`to the directory selected.
+
+## Example features
+
+The custom CSS has been used to change the style of the tables in the document.
+
+```{r}
+knitr::kable(mtcars[1:5, 1:5], caption = "A custom table style")
+```
+
+# Limitations
+
+You may notice that this kind of template requires the external files to be in the same working directory as the R Markdown file. This can make the file less portable, and also can become frustrating if you want to have lots of additional files.
+
+You may overcome this limitation by creating a custom R Markdown format. This allows us to reference to files contained directly within your custom template package. To see an example of this, check out template 5.
+
