@@ -11,7 +11,9 @@ To produce a R package with Rmarkdown documents and scripts. The package is base
 
 ## How to use
 
-Click the green 'Use this template' button from [in this repo](https://github.com/Graham-Rush-19/RStudio_template) to copy it.
+Click the green 'Use this template' button from [in this repo](https://github.com/Graham-Rush-19/RStudio_template) to copy it. 
+If you want to open the project in R and create the files, open RStudio anc lick 'New Project > Version Control > Git', now copy and paste the Code from Github into thew 'Repository URL' and click 'Create Project'.
+You can now 'Commit' changes etc into Github and track the project.
 
 ## File tree
 
