@@ -7,12 +7,12 @@
 
 ## Purpose
 
-To produce a R package with Rmarkdown documents and scripts. The package is based ont the work by Matt Dray. There is a [blog post](https://www.rostrum.blog/2019/06/11/r-repo-template/) for a more in-depth explanation of the original [repo](https://github.com/matt-dray/r-analysis-template).
+To produce a R package with Rmarkdown documents and scripts. The package is based on the work by Matt Dray. There is a [blog post](https://www.rostrum.blog/2019/06/11/r-repo-template/) for a more in-depth explanation of the original [repo](https://github.com/matt-dray/r-analysis-template).
 
 ## How to use
 
 Click the green 'Use this template' button from [in this repo](https://github.com/Graham-Rush-19/RStudio_template) to copy it. 
-If you want to open the project in R and create the files, open RStudio anc lick 'New Project > Version Control > Git', now copy and paste the Code from Github into thew 'Repository URL' and click 'Create Project'.
+If you want to open the project in R and create the files, open RStudio and click 'New Project > Version Control > Git', now copy and paste the Code from Github into the 'Repository URL' and click 'Create Project'.
 You can now 'Commit' changes etc into Github and track the project.
 
 ## File tree
